@@ -1,0 +1,226 @@
+LDPC Simulator. De Gennaro/Jahier Pagliari, RESD Project, 2014
+Select operation:
+1) Generate new LDPC code
+2) Load H matrix from file
+3) Exit
+> 1
+Insert message length (k): 32
+Insert code length (n) (must be > k): 50
+Generating new code with the even ones method.
+Select number of ones: 3
+Print the parity check matrix for the code? 
+1) yes
+2) no
+> 1
+k = 32, n = 50
+Parity check matrix: 
+1 1 0 1 0 0 0 1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 
+0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 1 1 0 0 0 1 0 0 0 0 0 0 1 0 0 
+1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 0 1 0 1 0 0 
+0 1 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 0 
+0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 
+0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 0 0 0 0 0 
+0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 1 1 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 1 0 1 0 0 0 1 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 
+0 0 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 1 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 
+0 0 1 0 0 1 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 1 0 1 0 
+0 0 0 1 0 0 0 0 0 0 0 1 1 0 1 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 1 0 0 1 1 0 0 0 0 
+0 0 0 1 0 0 0 0 0 1 0 0 0 1 1 0 1 0 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 1 0 0 0 1 0 0 1 1 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 
+0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+0 0 1 0 0 1 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 1 
+
+Select operation: 
+1) Start simulation
+2) Save parity check matrix to file
+3) Exit
+> 1
+Select BSC equivalent channel transition probability (between 0 and 1): 0.05
+Select error correction algorithm: 
+1) Standard Belief Propagation
+2) Logarithmic Belief Propagation
+> 1
+Select maximum number of iterations of the algorithm: 200
+Select filename containing simulation inputs: sim_input.txt
+===================================================
+Simulation vector #0
+Input word: 10101010101010101010101010101010
+Encoded word: 10101011001100001010101010101010101010101010101010
+Memory output: 10111011001100001010101010101010101010101010101010
+Number of raw errors: 1
+The received word is not a codeword
+Output of error correction: 10101011001100001010101010101010101010101010101010
+Number of errors: 0
+The corrected word is a codeword
+Decoded word: 10101010101010101010101010101010
+===================================================
+Simulation vector #1
+Input word: 01010101010101010101010101010101
+Encoded word: 10001000100110010001010101010101010101010101010101
+Memory output: 10001001100110010001010101010101010101010101010101
+Number of raw errors: 1
+The received word is not a codeword
+Output of error correction: 10001000100110010001010101010101010101010101010101
+Number of errors: 0
+The corrected word is a codeword
+Decoded word: 01010101010101010101010101010101
+===================================================
+Simulation vector #2
+Input word: 00010001000100010001000100010001
+Encoded word: 00011001011000110100010001000100010001000100010001
+Memory output: 00011001011000110100010001000110010001000110010001
+Number of raw errors: 2
+The received word is not a codeword
+Output of error correction: 00011001011000110100010001000100010001000100010001
+Number of errors: 0
+The corrected word is a codeword
+Decoded word: 00010001000100010001000100010001
+===================================================
+Simulation vector #3
+Input word: 11111111111111111111111111111111
+Encoded word: 00100011101010011011111111111111111111111111111111
+Memory output: 00110011101010011011111111111111111111111111111111
+Number of raw errors: 1
+The received word is not a codeword
+Output of error correction: 00100011101010011011111111111111111111111111111111
+Number of errors: 0
+The corrected word is a codeword
+Decoded word: 11111111111111111111111111111111
+===================================================
+Simulation vector #4
+Input word: 00000001001000110100010101100111
+Encoded word: 01110101111100111000000001001000110100010101100111
+Memory output: 11110101111100111000010101001000110100010101100111
+Number of raw errors: 3
+The received word is not a codeword
+Output of error correction: 11110101111100111000010101001000110100010101100111
+Number of errors: 3
+The corrected word is not a codeword
+Decoded word: 00010101001000110100010101100111
+===================================================
+Simulation vector #5
+Input word: 00000000000000000000000000000000
+Encoded word: 00000000000000000000000000000000000000000000000000
+Memory output: 00000100100000000000000000000000000000000000000000
+Number of raw errors: 2
+The received word is not a codeword
+Output of error correction: 00000000000000000000000000000000000000000000000000
+Number of errors: 0
+The corrected word is a codeword
+Decoded word: 00000000000000000000000000000000
+===================================================
+Simulation vector #6
+Input word: 00100010001000100010001000100010
+Encoded word: 11010110100101011000100010001000100010001000100010
+Memory output: 11010110100101011000100010001000100010101000100010
+Number of raw errors: 1
+The received word is not a codeword
+Output of error correction: 11010110100101011000100010001000100010001000100010
+Number of errors: 0
+The corrected word is a codeword
+Decoded word: 00100010001000100010001000100010
+===================================================
+Simulation vector #7
+Input word: 01000100010001000100010001000100
+Encoded word: 10010001111110100101000100010001000100010001000100
+Memory output: 10000001101110100101000100010001000100010001000100
+Number of raw errors: 2
+The received word is not a codeword
+Output of error correction: 10010001111110100101000100010001000100010001000100
+Number of errors: 0
+The corrected word is a codeword
+Decoded word: 01000100010001000100010001000100
+===================================================
+Simulation vector #8
+Input word: 01000010010000100100001001000010
+Encoded word: 01101100001001110001000010010000100100001001000010
+Memory output: 01001000001001110001000000010000100100001001000010
+Number of raw errors: 3
+The received word is not a codeword
+Output of error correction: 01001000001001110001000010010000100100001001000010
+Number of errors: 2
+The corrected word is not a codeword
+Decoded word: 01000010010000100100001001000010
+===================================================
+Simulation vector #9
+Input word: 00000000000000000001000100010001
+Encoded word: 00111000010100010000000000000000000001000100010001
+Memory output: 00111010010100010000000100000000000001000100010001
+Number of raw errors: 2
+The received word is not a codeword
+Output of error correction: 00111000010100010000000000000000000001000100010001
+Number of errors: 0
+The corrected word is a codeword
+Decoded word: 00000000000000000001000100010001
+===================================================
+Simulation vector #10
+Input word: 00010001000100010000000000000000
+Encoded word: 00100001001100100100010001000100010000000000000000
+Memory output: 00100001011100100100010001000100010100000000000000
+Number of raw errors: 2
+The received word is not a codeword
+Output of error correction: 00100001001100100100010001000100010000000000000000
+Number of errors: 0
+The corrected word is a codeword
+Decoded word: 00010001000100010000000000000000
+===================================================
+Simulation vector #11
+Input word: 11111111111111110000000000000000
+Encoded word: 01001011010111001111111111111111110000000000000000
+Memory output: 01001011010111001111011110111111110000000000000000
+Number of raw errors: 2
+The received word is not a codeword
+Output of error correction: 01001011010111001111111111111111110000000000000000
+Number of errors: 0
+The corrected word is a codeword
+Decoded word: 11111111111111110000000000000000
+===================================================
+Simulation vector #12
+Input word: 00000000000000001111111111111111
+Encoded word: 01101000111101010100000000000000001111111111111111
+Memory output: 01101000111101010100000000000001101101111111011111
+Number of raw errors: 4
+The received word is not a codeword
+Output of error correction: 01101000111101010100000000000001101101111111011111
+Number of errors: 4
+The corrected word is not a codeword
+Decoded word: 00000000000001101101111111011111
+===================================================
+Simulation vector #13
+Input word: 01010101010101011010101010101010
+Encoded word: 11100000011011000101010101010101011010101010101010
+Memory output: 11101000011011000101011100010101011010101011101010
+Number of raw errors: 4
+The received word is not a codeword
+Output of error correction: 11101000011011000101011100010101011010101011101010
+Number of errors: 4
+The corrected word is not a codeword
+Decoded word: 01011100010101011010101011101010
+===================================================
+Simulation vector #14
+Input word: 10101010101010100101010101010101
+Encoded word: 11000011110001011110101010101010100101010101010101
+Memory output: 11000011110001011110101010101011100101000101010001
+Number of raw errors: 3
+The received word is not a codeword
+Output of error correction: 11000011110001011110001010101011100101000101010001
+Number of errors: 4
+The corrected word is not a codeword
+Decoded word: 10001010101011100101000101010001
+===================================================
+Simulation statistics: 
+Number of simulation vectors: 15
+Channel error probability: 0.05
+Number of raw errors: 33
+Average raw errors per vector: 2.2
+Number of errors after correction: 17
+Average errors per vector after correction: 1.13333
+Select operation: 
+1) Start simulation
+2) Save parity check matrix to file
+3) Exit
+> 3
+Quitting...
