@@ -5,6 +5,8 @@ This repository contains the C++ code implementing a simulator of error correcti
 
 This code has been written as part of the final project for the course on "Reliable Embedded Systems Design" for the academic year 2013/2014 at Politecnico di Torino.
 
+All documentation on usage and internal structure of the software can be found in the doc/ folder.
+
 Authors:
 
 Alessandro de Gennaro (alessandro.degennaro@studenti.polito.it).
